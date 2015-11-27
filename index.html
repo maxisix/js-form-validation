@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form validation</title>
+</head>
+<body>
+
+    <form class="js-form">
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <input type="text" name="FirstName" class="js-validate" data-type="text" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="LastName" class="js-validate" data-type="text" placeholder="Last Name">
+            </div>
+
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <input type="email" name="Email" class="js-validate" data-type="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Zip" class="js-validate" data-type="zip" placeholder="Postal code">
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox" class="js-validate" data-type="checkbox" name="checkbox">
+                <label for="checkbox">I agree to receive communications.</label>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <a class="js-submit">Submit</a>
+        </div>
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="validation.js"></script>
+
+</body>
+</html>
